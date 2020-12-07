@@ -9,6 +9,9 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
+#include "levels/ddd/areas/1/model.inc.c"
+#include "levels/ddd/textureNew.inc.c"
 #include "levels/ddd/texture.inc.c"
 #include "levels/ddd/areas/1/1/model.inc.c"
 #include "levels/ddd/areas/1/2/model.inc.c"

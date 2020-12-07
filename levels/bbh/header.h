@@ -1,10 +1,15 @@
 #ifndef BBH_HEADER_H
 #define BBH_HEADER_H
-
 #include "types.h"
 #include "game/moving_texture.h"
-
-// geo
+extern const GeoLayout Geo_bbh_1_0x19001700[];
+extern const Gfx DL_bbh_1_0xe01adf0[];
+extern const Gfx DL_bbh_1_0xe026c20[];
+extern const Collision col_bbh_1_0xe020f10[];
+extern const LevelScript local_area_bbh_1_[];
+extern const LevelScript local_objects_bbh_1_[];
+extern const LevelScript local_warps_bbh_1_[];
+extern const LevelScript level_bbh_entry[];
 extern const GeoLayout geo_bbh_0005B0[];
 extern const GeoLayout geo_bbh_0005C8[];
 extern const GeoLayout geo_bbh_0005E0[];
@@ -46,8 +51,6 @@ extern const GeoLayout geo_bbh_000E40[];
 extern const GeoLayout geo_bbh_000E80[];
 extern const GeoLayout geo_bbh_000EB0[];
 extern const GeoLayout geo_bbh_000F00[];
-
-// leveldata
 extern const Gfx bbh_seg7_dl_070075A8[];
 extern const Gfx bbh_seg7_dl_07007940[];
 extern const Gfx bbh_seg7_dl_07007B90[];
@@ -95,7 +98,6 @@ extern const Gfx bbh_seg7_dl_0701FD28[];
 extern const Gfx bbh_seg7_dl_0701FFE8[];
 extern const Gfx bbh_seg7_dl_070202F0[];
 extern const Gfx bbh_seg7_dl_070206F0[];
-extern const Collision bbh_seg7_collision_level[];
 extern const u8 bbh_seg7_rooms[];
 extern const MacroObject bbh_seg7_macro_objs[];
 extern const Collision bbh_seg7_collision_staircase_step[];
@@ -107,8 +109,4 @@ extern const Collision bbh_seg7_collision_merry_go_round[];
 extern const Collision bbh_seg7_collision_coffin[];
 extern const struct MovtexQuadCollection bbh_movtex_merry_go_round_water_entrance[];
 extern const struct MovtexQuadCollection bbh_movtex_merry_go_round_water_side[];
-
-// script
-extern const LevelScript level_bbh_entry[];
-
 #endif

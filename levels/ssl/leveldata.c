@@ -9,11 +9,10 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
-// LEVEL DATA
+
+#include "levels/ssl/areas/1/model.inc.c"
+#include "levels/ssl/textureNew.inc.c"
 #include "levels/ssl/texture.inc.c"
-// This is an oddity, but it is assumed this because of the likelyhood SSL's
-// course used to be smaller in a prototype build and that moving areas around
-// caused this discrepency. (See the 3 Star Course theory)
 #include "levels/ssl/areas/2/4/model.inc.c"
 #include "levels/ssl/areas/1/1/model.inc.c"
 #include "levels/ssl/areas/1/2/model.inc.c"

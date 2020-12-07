@@ -1,10 +1,14 @@
 #ifndef SSL_HEADER_H
 #define SSL_HEADER_H
-
 #include "types.h"
 #include "game/moving_texture.h"
-
-// geo
+extern const GeoLayout Geo_ssl_1_0x19001700[];
+extern const Gfx DL_ssl_1_0xe0211b0[];
+extern const Collision col_ssl_1_0xe027e40[];
+extern const LevelScript local_area_ssl_1_[];
+extern const LevelScript local_objects_ssl_1_[];
+extern const LevelScript local_warps_ssl_1_[];
+extern const LevelScript level_ssl_entry[];
 extern const GeoLayout ssl_geo_0005C0[];
 extern const GeoLayout ssl_geo_0005D8[];
 extern const GeoLayout ssl_geo_000618[];
@@ -16,8 +20,6 @@ extern const GeoLayout ssl_geo_000794[];
 extern const GeoLayout ssl_geo_0007AC[];
 extern const GeoLayout ssl_geo_0007CC[];
 extern const GeoLayout ssl_geo_00088C[];
-
-// leveldata
 extern const u8 ssl_pyramid_sand[];
 extern const u8 ssl_quicksand[];
 extern const Gfx ssl_dl_quicksand_pit_begin[];
@@ -34,7 +36,6 @@ extern const Gfx ssl_seg7_dl_0700BC18[];
 extern const Gfx ssl_seg7_dl_0700BD00[];
 extern const Gfx ssl_seg7_dl_0700BF18[];
 extern const Gfx ssl_seg7_dl_0700FCE0[];
-extern const Collision ssl_seg7_area_1_collision[];
 extern const MacroObject ssl_seg7_area_1_macro_objs[];
 extern const Collision ssl_seg7_collision_pyramid_top[];
 extern const Collision ssl_seg7_collision_tox_box[];
@@ -60,8 +61,6 @@ extern const Gfx ssl_seg7_dl_070229E8[];
 extern const Gfx ssl_seg7_dl_07022CF8[];
 extern const Gfx ssl_seg7_dl_070233A8[];
 extern const Gfx ssl_seg7_dl_070235C0[];
-extern const Collision ssl_seg7_area_2_collision[];
-extern const Collision ssl_seg7_area_3_collision[];
 extern const MacroObject ssl_seg7_area_2_macro_objs[];
 extern const MacroObject ssl_seg7_area_3_macro_objs[];
 extern const Collision ssl_seg7_collision_grindel[];
@@ -81,8 +80,4 @@ extern const Gfx ssl_dl_pyramid_sand_pathway_front_end[];
 extern Movtex ssl_movtex_tris_pyramid_sand_pathway_floor[];
 extern Movtex ssl_movtex_tris_pyramid_sand_pathway_side[];
 extern const Gfx ssl_dl_pyramid_sand_pathway_side_end[];
-
-// script
-extern const LevelScript level_ssl_entry[];
-
 #endif

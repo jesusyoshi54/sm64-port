@@ -1,9 +1,14 @@
 #ifndef BITFS_HEADER_H
 #define BITFS_HEADER_H
-
 #include "types.h"
-
-// geo
+#include "game/moving_texture.h"
+extern const GeoLayout Geo_bitfs_1_0x19001700[];
+extern const Gfx DL_bitfs_1_0xe017f10[];
+extern const Collision col_bitfs_1_0xe01c590[];
+extern const LevelScript local_area_bitfs_1_[];
+extern const LevelScript local_objects_bitfs_1_[];
+extern const LevelScript local_warps_bitfs_1_[];
+extern const LevelScript level_bitfs_entry[];
 extern const GeoLayout bitfs_geo_0004B0[];
 extern const GeoLayout bitfs_geo_0004C8[];
 extern const GeoLayout bitfs_geo_0004E0[];
@@ -36,8 +41,6 @@ extern const GeoLayout bitfs_geo_000758[];
 extern const GeoLayout bitfs_geo_000770[];
 extern const GeoLayout bitfs_geo_000788[];
 extern const GeoLayout bitfs_geo_0007A0[];
-
-// leveldata
 extern const Gfx bitfs_seg7_dl_07002118[];
 extern const Gfx bitfs_seg7_dl_07002A78[];
 extern const Gfx bitfs_seg7_dl_07003670[];
@@ -72,7 +75,6 @@ extern const Gfx bitfs_seg7_dl_07011798[];
 extern const Gfx bitfs_seg7_dl_07011BA0[];
 extern const Gfx bitfs_seg7_dl_07011D98[];
 extern const Gfx bitfs_seg7_dl_07011E28[];
-extern const Collision bitfs_seg7_collision_level[];
 extern const MacroObject bitfs_seg7_macro_objs[];
 extern const Collision bitfs_seg7_collision_07015124[];
 extern const Collision bitfs_seg7_collision_sinking_cage_platform[];
@@ -90,8 +92,4 @@ extern Movtex bitfs_movtex_tris_lava_second_section[];
 extern Movtex bitfs_movtex_tris_lava_floor[];
 extern const Gfx bitfs_dl_lava_sections[];
 extern const Gfx bitfs_dl_lava_floor[];
-
-// script
-extern const LevelScript level_bitfs_entry[];
-
 #endif

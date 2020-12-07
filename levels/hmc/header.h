@@ -1,10 +1,14 @@
 #ifndef HMC_HEADER_H
 #define HMC_HEADER_H
-
 #include "types.h"
 #include "game/moving_texture.h"
-
-// geo
+extern const GeoLayout Geo_hmc_1_0x19001700[];
+extern const Gfx DL_hmc_1_0xe01bbc0[];
+extern const Collision col_hmc_1_0xe021f20[];
+extern const LevelScript local_area_hmc_1_[];
+extern const LevelScript local_objects_hmc_1_[];
+extern const LevelScript local_warps_hmc_1_[];
+extern const LevelScript level_hmc_entry[];
 extern const GeoLayout hmc_geo_000530[];
 extern const GeoLayout hmc_geo_000548[];
 extern const GeoLayout hmc_geo_000570[];
@@ -31,8 +35,6 @@ extern const GeoLayout hmc_geo_000A88[];
 extern const GeoLayout hmc_geo_000AE8[];
 extern const GeoLayout hmc_geo_000B48[];
 extern const GeoLayout hmc_geo_000B90[];
-
-// leveldata
 extern const Gfx hmc_seg7_dl_070078B0[];
 extern const Gfx hmc_seg7_dl_07007B50[];
 extern const Gfx hmc_seg7_dl_070080E8[];
@@ -76,7 +78,6 @@ extern const Gfx hmc_seg7_dl_07024268[];
 extern const Gfx hmc_seg7_dl_070242A0[];
 extern const u8 *const hmc_seg7_painting_textures_07025518[];
 extern struct Painting cotmc_painting;
-extern const Collision hmc_seg7_collision_level[];
 extern const MacroObject hmc_seg7_macro_objs[];
 extern const u8 hmc_seg7_rooms[];
 extern const Collision hmc_seg7_collision_elevator[];
@@ -86,8 +87,4 @@ extern const Collision hmc_seg7_collision_controllable_platform_sub[];
 extern const Trajectory hmc_seg7_trajectory_0702B86C[];
 extern const struct MovtexQuadCollection hmc_movtex_dorrie_pool_water[];
 extern const struct MovtexQuadCollection hmc_movtex_toxic_maze_mist[];
-
-// script
-extern const LevelScript level_hmc_entry[];
-
 #endif

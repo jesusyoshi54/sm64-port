@@ -9,6 +9,9 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
+#include "levels/bitdw/areas/1/model.inc.c"
+#include "levels/bitdw/textureNew.inc.c"
 #include "levels/bitdw/texture.inc.c"
 #include "levels/bitdw/areas/1/1/model.inc.c"
 #include "levels/bitdw/areas/1/starting_platform/model.inc.c"
