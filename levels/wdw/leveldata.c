@@ -9,6 +9,7 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/wdw/texture.inc.c"
 #include "levels/wdw/areas/1/1/model.inc.c"
 #include "levels/wdw/areas/1/2/model.inc.c"
@@ -36,3 +37,6 @@
 #include "levels/wdw/rotating_platform/collision.inc.c"
 #include "levels/wdw/areas/1/movtext.inc.c"
 #include "levels/wdw/areas/2/movtext.inc.c"
+#include "levels/wdw/areas/1/model.inc.c"
+#include "levels/wdw/areas/2/model.inc.c"
+#include "levels/wdw/textureNew.inc.c"

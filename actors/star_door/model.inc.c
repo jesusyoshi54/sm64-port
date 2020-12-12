@@ -4,13 +4,13 @@ static const Lights1 inside_castle_seg7_lights_0703BD28 = gdSPDefLights1(
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
-// ALIGNED8 static const u8 star_door_texture[] = {
-// #include "actors/star_door/5.rgba16.inc.c"
-// };
+ALIGNED8 static const u8 star_door_texture[] = {
+#include "actors/star_door/5.rgba16.inc.c"
+};
 
-// ALIGNED8 static const u8 star_door_texture2[] = {
-// #include "actors/star_door/6.rgba16.inc.c"
-// };
+ALIGNED8 static const u8 star_door_texture2[] = {
+#include "actors/star_door/6.rgba16.inc.c"
+};
 
 // 0x0703BD40 - 0x0703BE40
 static const Vtx inside_castle_seg7_vertex_0703BD40[] = {
@@ -50,7 +50,7 @@ static const Vtx inside_castle_seg7_vertex_0703BE80[] = {
 
 // 0x0703BEC0 - 0x0703BF38
 static const Gfx inside_castle_seg7_dl_0703BEC0[] = {
-    // gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, star_door_texture2),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, star_door_texture2),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
     gsSPLight(&inside_castle_seg7_lights_0703BD28.l, 1),
@@ -65,7 +65,7 @@ static const Gfx inside_castle_seg7_dl_0703BEC0[] = {
 
 // 0x0703BF38 - 0x0703BF70
 static const Gfx inside_castle_seg7_dl_0703BF38[] = {
-    // gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, star_door_texture2),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, star_door_texture2),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
     gsSPVertex(inside_castle_seg7_vertex_0703BE40, 4, 0),
@@ -75,7 +75,7 @@ static const Gfx inside_castle_seg7_dl_0703BF38[] = {
 
 // 0x0703BF70 - 0x0703BFA8
 static const Gfx inside_castle_seg7_dl_0703BF70[] = {
-    // gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, star_door_texture),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, star_door_texture),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
     gsSPVertex(inside_castle_seg7_vertex_0703BE80, 4, 0),

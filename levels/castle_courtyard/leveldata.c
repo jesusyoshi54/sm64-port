@@ -9,6 +9,7 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/castle_courtyard/texture.inc.c"
 #include "levels/castle_courtyard/areas/1/1/model.inc.c"
 #include "levels/castle_courtyard/areas/1/spire/model.inc.c"
@@ -17,3 +18,7 @@
 #include "levels/castle_courtyard/areas/1/collision.inc.c"
 #include "levels/castle_courtyard/areas/1/macro.inc.c"
 #include "levels/castle_courtyard/areas/1/movtext.inc.c"
+#include "levels/castle_courtyard/areas/1/model.inc.c"
+#include "levels/castle_courtyard/areas/2/model.inc.c"
+#include "levels/castle_courtyard/areas/2/collision.inc.c"
+#include "levels/castle_courtyard/textureNew.inc.c"

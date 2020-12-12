@@ -1,12 +1,21 @@
 #ifndef CASTLE_INSIDE_HEADER_H
 #define CASTLE_INSIDE_HEADER_H
-
 #include "types.h"
-#include "game/paintings.h"
 #include "game/moving_texture.h"
-
-// geo
-extern const GeoLayout castle_geo_000F00[];
+extern const GeoLayout Geo_castle_inside_1_0x19001700[];
+extern const Gfx DL_castle_inside_1_0xe025b20[];
+extern const Collision col_castle_inside_1_0xe02c820[];
+extern const GeoLayout Geo_castle_inside_2_0x19001700[];
+extern const Gfx DL_castle_inside_2_0xe026480[];
+extern const Collision col_castle_inside_2_0xe02d558[];
+extern const LevelScript local_area_castle_inside_1_[];
+extern const LevelScript local_objects_castle_inside_1_[];
+extern const LevelScript local_warps_castle_inside_1_[];
+extern const LevelScript local_area_castle_inside_2_[];
+extern const LevelScript local_objects_castle_inside_2_[];
+extern const LevelScript local_warps_castle_inside_2_[];
+extern const LevelScript level_castle_inside_entry[];
+// extern const GeoLayout castle_geo_000F00[];
 extern const GeoLayout castle_geo_000F18[];
 extern const GeoLayout castle_geo_000F30[];
 extern const GeoLayout castle_geo_000F70[];
@@ -53,8 +62,6 @@ extern const GeoLayout castle_geo_001AF8[];
 extern const GeoLayout castle_geo_001B48[];
 extern const GeoLayout castle_geo_001BB0[];
 extern const GeoLayout castle_geo_001C10[];
-
-// leveldata
 extern const Gfx inside_castle_seg7_dl_070225D8[];
 extern const Gfx inside_castle_seg7_dl_07022610[];
 extern const Gfx inside_castle_seg7_dl_070234C0[];
@@ -102,7 +109,7 @@ extern const Gfx inside_castle_seg7_dl_0703A6C8[];
 extern const Gfx inside_castle_seg7_dl_0703A808[];
 extern const Gfx inside_castle_seg7_dl_0703BA08[];
 extern const Gfx inside_castle_seg7_dl_0703BCB8[];
-extern const Gfx inside_castle_seg7_dl_0703BFA8[];
+// extern const Gfx inside_castle_seg7_dl_0703BFA8[];
 extern const Gfx inside_castle_seg7_dl_0703E6F0[];
 extern const Gfx inside_castle_seg7_dl_07043028[];
 extern const Gfx inside_castle_seg7_dl_07043B48[];
@@ -145,13 +152,9 @@ extern const u8 inside_castle_seg7_area_1_rooms[];
 extern const u8 inside_castle_seg7_area_2_rooms[];
 extern const u8 inside_castle_seg7_area_3_rooms[];
 extern const Collision inside_castle_seg7_collision_floor_trap[];
-extern const Collision inside_castle_seg7_collision_star_door[];
+// extern const Collision inside_castle_seg7_collision_star_door[];
 extern const Collision inside_castle_seg7_collision_water_level_pillar[];
 extern const Trajectory *const inside_castle_seg7_trajectory_mips[];
 extern const struct MovtexQuadCollection inside_castle_movtex_green_room_water[];
 extern const struct MovtexQuadCollection inside_castle_movtex_moat_water[];
-
-// script
-extern const LevelScript level_castle_inside_entry[];
-
 #endif

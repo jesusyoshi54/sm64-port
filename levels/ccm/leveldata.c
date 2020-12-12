@@ -9,6 +9,7 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/ccm/texture.inc.c"
 #include "levels/ccm/areas/1/1/model.inc.c"
 #include "levels/ccm/areas/1/2/model.inc.c"
@@ -45,3 +46,6 @@
 #include "levels/ccm/areas/2/collision.inc.c"
 #include "levels/ccm/areas/2/macro.inc.c"
 #include "levels/ccm/areas/2/trajectory.inc.c"
+#include "levels/ccm/areas/1/model.inc.c"
+#include "levels/ccm/areas/2/model.inc.c"
+#include "levels/ccm/textureNew.inc.c"

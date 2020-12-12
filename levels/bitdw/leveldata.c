@@ -9,6 +9,7 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/bitdw/texture.inc.c"
 #include "levels/bitdw/areas/1/1/model.inc.c"
 #include "levels/bitdw/areas/1/starting_platform/model.inc.c"
@@ -48,3 +49,7 @@
 #include "levels/bitdw/collapsing_stairs_3/collision.inc.c"
 #include "levels/bitdw/collapsing_stairs_4/collision.inc.c"
 #include "levels/bitdw/collapsing_stairs_5/collision.inc.c"
+#include "levels/bitdw/areas/1/model.inc.c"
+#include "levels/bitdw/areas/2/model.inc.c"
+#include "levels/bitdw/areas/2/collision.inc.c"
+#include "levels/bitdw/textureNew.inc.c"

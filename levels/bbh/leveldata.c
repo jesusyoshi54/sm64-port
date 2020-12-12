@@ -9,6 +9,7 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/bbh/texture.inc.c"
 #include "levels/bbh/areas/1/1/model.inc.c"
 #include "levels/bbh/areas/1/2/model.inc.c"
@@ -69,3 +70,7 @@
 #include "levels/bbh/merry_go_round/collision.inc.c"
 #include "levels/bbh/coffin/collision.inc.c"
 #include "levels/bbh/areas/1/movtext.inc.c"
+#include "levels/bbh/areas/1/model.inc.c"
+#include "levels/bbh/areas/2/model.inc.c"
+#include "levels/bbh/areas/2/collision.inc.c"
+#include "levels/bbh/textureNew.inc.c"

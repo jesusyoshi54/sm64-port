@@ -9,6 +9,7 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/ddd/texture.inc.c"
 #include "levels/ddd/areas/1/1/model.inc.c"
 #include "levels/ddd/areas/1/2/model.inc.c"
@@ -34,3 +35,6 @@
 #include "levels/ddd/sub_door/collision.inc.c"
 #include "levels/ddd/areas/1/movtext.inc.c"
 #include "levels/ddd/areas/2/movtext.inc.c"
+#include "levels/ddd/areas/1/model.inc.c"
+#include "levels/ddd/areas/2/model.inc.c"
+#include "levels/ddd/textureNew.inc.c"

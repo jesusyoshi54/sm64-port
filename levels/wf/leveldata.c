@@ -9,6 +9,7 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/wf/texture.inc.c"
 #include "levels/wf/areas/1/1/model.inc.c"
 #include "levels/wf/areas/1/2/model.inc.c"
@@ -67,3 +68,7 @@
 #include "levels/wf/areas/1/collision.inc.c"
 #include "levels/wf/areas/1/macro.inc.c"
 #include "levels/wf/areas/1/movtext.inc.c"
+#include "levels/wf/areas/1/model.inc.c"
+#include "levels/wf/areas/2/model.inc.c"
+#include "levels/wf/areas/2/collision.inc.c"
+#include "levels/wf/textureNew.inc.c"

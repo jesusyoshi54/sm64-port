@@ -1,9 +1,20 @@
 #ifndef TTC_HEADER_H
 #define TTC_HEADER_H
-
 #include "types.h"
-
-// geo
+#include "game/moving_texture.h"
+extern const GeoLayout Geo_ttc_1_0x19001700[];
+extern const Gfx DL_ttc_1_0xe048d50[];
+extern const Collision col_ttc_1_0xe05e350[];
+extern const GeoLayout Geo_ttc_2_0x19001700[];
+extern const Gfx DL_ttc_2_0xe04b2e0[];
+extern const Collision col_ttc_2_0xe0625e8[];
+extern const LevelScript local_area_ttc_1_[];
+extern const LevelScript local_objects_ttc_1_[];
+extern const LevelScript local_warps_ttc_1_[];
+extern const LevelScript local_area_ttc_2_[];
+extern const LevelScript local_objects_ttc_2_[];
+extern const LevelScript local_warps_ttc_2_[];
+extern const LevelScript level_ttc_entry[];
 extern const GeoLayout ttc_geo_000240[];
 extern const GeoLayout ttc_geo_000258[];
 extern const GeoLayout ttc_geo_000270[];
@@ -20,8 +31,6 @@ extern const GeoLayout ttc_geo_000370[];
 extern const GeoLayout ttc_geo_000388[];
 extern const GeoLayout ttc_geo_0003A0[];
 extern const GeoLayout ttc_geo_0003B8[];
-
-// leveldata
 extern const Gfx ttc_seg7_dl_0700AD38[];
 extern const Gfx ttc_seg7_dl_0700B1D8[];
 extern const Gfx ttc_seg7_dl_0700E878[];
@@ -40,7 +49,6 @@ extern const Gfx ttc_seg7_dl_07011B38[];
 extern const Gfx ttc_seg7_dl_07012028[];
 extern const Gfx ttc_seg7_dl_07012148[];
 extern const Gfx ttc_seg7_dl_07012278[];
-extern const Collision ttc_seg7_collision_level[];
 extern const Collision ttc_seg7_collision_07014F70[];
 extern const Collision ttc_seg7_collision_07015008[];
 extern const Collision ttc_seg7_collision_clock_pendulum[];
@@ -61,8 +69,4 @@ extern const Gfx ttc_dl_surface_treadmill_end[];
 extern Movtex ttc_movtex_tris_big_surface_treadmill[];
 extern Movtex ttc_movtex_tris_small_surface_treadmill[];
 extern const Gfx ttc_dl_surface_treadmill[];
-
-// script
-extern const LevelScript level_ttc_entry[];
-
 #endif

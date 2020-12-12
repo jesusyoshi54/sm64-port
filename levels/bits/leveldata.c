@@ -6,8 +6,10 @@
 #include "macro_preset_names.h"
 #include "special_preset_names.h"
 #include "textures.h"
+#include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/bits/texture.inc.c"
 #include "levels/bits/areas/1/1/model.inc.c"
 #include "levels/bits/areas/1/2/model.inc.c"
@@ -56,3 +58,7 @@
 #include "levels/bits/areas/1/30/collision.inc.c"
 #include "levels/bits/areas/1/31/collision.inc.c"
 #include "levels/bits/areas/1/32/collision.inc.c"
+#include "levels/bits/areas/1/model.inc.c"
+#include "levels/bits/areas/2/model.inc.c"
+#include "levels/bits/areas/2/collision.inc.c"
+#include "levels/bits/textureNew.inc.c"

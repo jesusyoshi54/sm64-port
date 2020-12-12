@@ -9,6 +9,7 @@
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
+
 #include "levels/bob/texture.inc.c"
 #include "levels/bob/areas/1/1/model.inc.c"
 #include "levels/bob/areas/1/2/model.inc.c"
@@ -25,3 +26,7 @@
 #include "levels/bob/seesaw_platform/collision.inc.c"
 #include "levels/bob/grate_door/collision.inc.c"
 #include "levels/bob/areas/1/trajectory.inc.c"
+#include "levels/bob/areas/1/model.inc.c"
+#include "levels/bob/areas/2/model.inc.c"
+#include "levels/bob/areas/2/collision.inc.c"
+#include "levels/bob/textureNew.inc.c"
