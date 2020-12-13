@@ -253,6 +253,6 @@ extern const Collision wooden_signpost_seg3_collision_0302DD80[];
 
 //star door
 extern const GeoLayout star_door_geo[];
-extern const Gfx inside_castle_seg7_dl_0703BFA8[];
-extern const Collision inside_castle_seg7_collision_star_door[];
+extern const Gfx star_door_DL[];
+extern const Collision collision_star_door[];
 #endif

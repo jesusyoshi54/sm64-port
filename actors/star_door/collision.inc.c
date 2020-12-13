@@ -1,5 +1,5 @@
 // 0x07078E14 - 0x07078E80
-const Collision inside_castle_seg7_collision_star_door[] = {
+const Collision collision_star_door[] = {
     COL_INIT(),
     COL_VERTEX_INIT(0x8),
     COL_VERTEX(-80, 0, -20),

@@ -84,7 +84,7 @@ static const Gfx inside_castle_seg7_dl_0703BF70[] = {
 };
 
 // 0x0703BFA8 - 0x0703C040
-const Gfx inside_castle_seg7_dl_0703BFA8[] = {
+const Gfx star_door_DL[] = {
     gsDPPipeSync(),
     gsDPSetCombineMode(G_CC_MODULATERGB, G_CC_MODULATERGB),
     gsSPClearGeometryMode(G_SHADING_SMOOTH),
