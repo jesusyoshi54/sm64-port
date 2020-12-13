@@ -7,7 +7,6 @@
 #include "level_update.h"
 #include "camera.h"
 #include "print.h"
-#include "../../enhancements/puppycam.h"
 #include "ingame_menu.h"
 #include "hud.h"
 #include "segment2.h"
@@ -471,8 +470,7 @@ void render_hud(void) {
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_CAMERA_AND_POWER) {
             render_hud_power_meter();
-            if (!newcam_active)
-                render_hud_camera_status();
+            render_hud_camera_status();
         }
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_TIMER) {
