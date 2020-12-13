@@ -204,20 +204,21 @@ void newcam_init(struct Camera *c, u8 dv)
     newcam_tilt = 1500;
     newcam_distance_target = newcam_distance_values[dv];
     newcam_yaw = -c->yaw+0x4000; //Mario and the camera's yaw have this offset between them.
-    newcam_mode = NC_MODE_NORMAL;
+    //putting mode 8D here as standard, going to change newcam mode via L button
+	newcam_mode = NC_MODE_8D;
     ///This here will dictate what modes the camera will start in at the beginning of a level. Below are some examples.
-    switch (gCurrLevelNum)
-    {
-        case LEVEL_BITDW: newcam_yaw = 0x4000; newcam_mode = NC_MODE_8D; newcam_tilt = 4000; newcam_distance_target = newcam_distance_values[2]; break;
-        case LEVEL_BITFS: newcam_yaw = 0x4000; newcam_mode = NC_MODE_8D; newcam_tilt = 4000; newcam_distance_target = newcam_distance_values[2]; break;
-        case LEVEL_BITS: newcam_yaw = 0x4000; newcam_mode = NC_MODE_8D; newcam_tilt = 4000; newcam_distance_target = newcam_distance_values[2]; break;
-        case LEVEL_WF: newcam_yaw = 0x4000; newcam_tilt = 2000; newcam_distance_target = newcam_distance_values[1]; break;
-        case LEVEL_RR: newcam_yaw = 0x6000; newcam_tilt = 2000; newcam_distance_target = newcam_distance_values[2]; break;
-        case LEVEL_CCM: if (gCurrAreaIndex == 1) {newcam_yaw = -0x4000; newcam_tilt = 2000; newcam_distance_target = newcam_distance_values[1];} else newcam_mode = NC_MODE_SLIDE; break;
-        case LEVEL_WDW: newcam_yaw = 0x2000; newcam_tilt = 3000; newcam_distance_target = newcam_distance_values[1]; break;
-        case 27: newcam_mode = NC_MODE_SLIDE; break;
-        case LEVEL_TTM: if (gCurrAreaIndex == 2) newcam_mode = NC_MODE_SLIDE; break;
-    }
+    // switch (gCurrLevelNum)
+    // {
+        // case LEVEL_BITDW: newcam_yaw = 0x4000; newcam_mode = NC_MODE_8D; newcam_tilt = 4000; newcam_distance_target = newcam_distance_values[2]; break;
+        // case LEVEL_BITFS: newcam_yaw = 0x4000; newcam_mode = NC_MODE_8D; newcam_tilt = 4000; newcam_distance_target = newcam_distance_values[2]; break;
+        // case LEVEL_BITS: newcam_yaw = 0x4000; newcam_mode = NC_MODE_8D; newcam_tilt = 4000; newcam_distance_target = newcam_distance_values[2]; break;
+        // case LEVEL_WF: newcam_yaw = 0x4000; newcam_tilt = 2000; newcam_distance_target = newcam_distance_values[1]; break;
+        // case LEVEL_RR: newcam_yaw = 0x6000; newcam_tilt = 2000; newcam_distance_target = newcam_distance_values[2]; break;
+        // case LEVEL_CCM: if (gCurrAreaIndex == 1) {newcam_yaw = -0x4000; newcam_tilt = 2000; newcam_distance_target = newcam_distance_values[1];} else newcam_mode = NC_MODE_SLIDE; break;
+        // case LEVEL_WDW: newcam_yaw = 0x2000; newcam_tilt = 3000; newcam_distance_target = newcam_distance_values[1]; break;
+        // case 27: newcam_mode = NC_MODE_SLIDE; break;
+        // case LEVEL_TTM: if (gCurrAreaIndex == 2) newcam_mode = NC_MODE_SLIDE; break;
+    // }
 
     newcam_distance = newcam_distance_target;
     newcam_intendedmode = newcam_mode;
@@ -520,12 +521,12 @@ static void newcam_zoom_button(void)
     }
 
     //When you press L and R together, set the flag for centering the camera. Afterwards, start setting the yaw to the Player's yaw at the time.
-    if (gPlayer1Controller->buttonDown & L_TRIG && gPlayer1Controller->buttonDown & R_TRIG && newcam_modeflags & NC_FLAG_ZOOM)
-    {
-        newcam_yaw_target = -gMarioState->faceAngle[1]-0x4000;
-        newcam_centering = 1;
-    }
-    else //Each time the player presses R, but NOT L the camera zooms out more, until it hits the limit and resets back to close view.
+    // if (gPlayer1Controller->buttonDown & L_TRIG && gPlayer1Controller->buttonDown & R_TRIG && newcam_modeflags & NC_FLAG_ZOOM)
+    // {
+        // newcam_yaw_target = -gMarioState->faceAngle[1]-0x4000;
+        // newcam_centering = 1;
+    // }
+    // else //Each time the player presses R, but NOT L the camera zooms out more, until it hits the limit and resets back to close view.
     if (gPlayer1Controller->buttonPressed & R_TRIG && newcam_modeflags & NC_FLAG_XTURN)
     {
         #ifndef nosound
@@ -541,6 +542,17 @@ static void newcam_zoom_button(void)
             newcam_distance_target = newcam_distance_values[0];
 
     }
+	//swap modes via L button
+	if (gPlayer1Controller->buttonPressed & L_TRIG){
+		if (newcam_mode == NC_MODE_NORMAL){
+			newcam_mode = NC_MODE_8D;
+		}
+		else{
+			newcam_mode = NC_MODE_NORMAL;
+		}
+	newcam_intendedmode = newcam_mode;
+    newcam_modeflags = newcam_mode;
+	}
     if (newcam_centering && newcam_modeflags & NC_FLAG_XTURN)
     {
         newcam_yaw = approach_s16_symmetric(newcam_yaw,newcam_yaw_target,0x800);
