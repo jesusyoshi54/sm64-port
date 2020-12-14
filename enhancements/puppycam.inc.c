@@ -521,11 +521,11 @@ static void newcam_zoom_button(void)
     }
 
     //When you press L and R together, set the flag for centering the camera. Afterwards, start setting the yaw to the Player's yaw at the time.
-    // if (gPlayer1Controller->buttonDown & L_TRIG && gPlayer1Controller->buttonDown & R_TRIG && newcam_modeflags & NC_FLAG_ZOOM)
-    // {
-        // newcam_yaw_target = -gMarioState->faceAngle[1]-0x4000;
-        // newcam_centering = 1;
-    // }
+    if (gPlayer1Controller->buttonDown & L_TRIG && gPlayer1Controller->buttonDown & R_TRIG && newcam_modeflags & NC_FLAG_ZOOM)
+    {
+        newcam_yaw_target = -gMarioState->faceAngle[1]-0x4000;
+        newcam_centering = 1;
+    }
     // else //Each time the player presses R, but NOT L the camera zooms out more, until it hits the limit and resets back to close view.
     if (gPlayer1Controller->buttonPressed & R_TRIG && newcam_modeflags & NC_FLAG_XTURN)
     {
