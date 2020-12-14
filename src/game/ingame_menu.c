@@ -2384,19 +2384,21 @@ void render_pause_course_options(s16 x, s16 y, s8 *index, s16 yIndex) {
 #else
     u8 textContinue[] = { TEXT_CONTINUE };
     u8 textExitCourse[] = { TEXT_EXIT_COURSE };
+    u8 textSwitchVersion[] = { TEXT_SWAP_VER };
     u8 textCameraAngleR[] = { TEXT_CAMERA_ANGLE_R };
 #endif
 
-    handle_menu_scrolling(MENU_SCROLL_VERTICAL, index, 1, 3);
+    handle_menu_scrolling(MENU_SCROLL_VERTICAL, index, 1, 4);
 
     gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
     gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, gDialogTextAlpha);
 
     print_generic_string(x + 10, y - 2, textContinue);
     print_generic_string(x + 10, y - 17, textExitCourse);
+    print_generic_string(x + 10, y - 33, textSwitchVersion);
 
-    if (index[0] != 3) {
-        print_generic_string(x + 10, y - 33, textCameraAngleR);
+    if (index[0] != 4) {
+        print_generic_string(x + 10, y - 54, textCameraAngleR);
         gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
 
         create_dl_translation_matrix(MENU_MTX_PUSH, x - X_VAL8, (y - ((index[0] - 1) * yIndex)) - Y_VAL8, 0);
@@ -2406,7 +2408,7 @@ void render_pause_course_options(s16 x, s16 y, s8 *index, s16 yIndex) {
         gSPPopMatrix(gDisplayListHead++, G_MTX_MODELVIEW);
     }
 
-    if (index[0] == 3) {
+    if (index[0] == 4) {
         render_pause_camera_options(x - 42, y - 42, &gDialogCameraAngleIndex, 110);
     }
 }
@@ -2648,7 +2650,7 @@ s16 render_pause_courses_and_castle(void) {
                 gDialogBoxState = DIALOG_STATE_OPENING;
                 gMenuMode = -1;
 
-                if (gDialogLineNum == 2) {
+                if ((gDialogLineNum == 2) | (gDialogLineNum == 3)) {
                     num = gDialogLineNum;
                 } else {
                     num = 1;

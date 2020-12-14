@@ -1015,8 +1015,12 @@ s32 play_mode_paused(void) {
 
         if (gDebugLevelSelect) {
             fade_into_special_warp(-9, 1);
-        } else {
-            initiate_warp(LEVEL_CASTLE_COURTYARD, 1, 1, 0);
+        } else if (gPauseScreenMode == 2){
+            initiate_warp(LEVEL_CASTLE_COURTYARD, gCurrentArea->index, 0x40, 0);
+            fade_into_special_warp(0, 0);
+            gSavedCourseNum = COURSE_NONE;
+        } else if (gPauseScreenMode == 3){
+            initiate_warp(gCurrLevelNum, gCurrentArea->index ^ 3, 10, 0);
             fade_into_special_warp(0, 0);
             gSavedCourseNum = COURSE_NONE;
         }
