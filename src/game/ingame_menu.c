@@ -2389,6 +2389,8 @@ void render_pause_course_options(s16 x, s16 y, s8 *index, s16 yIndex) {
 #endif
 	u8 MaxScroll = 2;
 	u16 SwapOffset = 17;
+    gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
+    gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, gDialogTextAlpha);
 	//Don't put exit course in castle grounds
 	if (gCurrCourseNum >= COURSE_MIN && gCurrCourseNum <= COURSE_MAX) {
     print_generic_string(x + 10, y - 17, textExitCourse);
@@ -2396,8 +2398,6 @@ void render_pause_course_options(s16 x, s16 y, s8 *index, s16 yIndex) {
 	SwapOffset = 33;
 	};
     handle_menu_scrolling(MENU_SCROLL_VERTICAL, index, 1, MaxScroll);
-    gSPDisplayList(gDisplayListHead++, dl_ia_text_begin);
-    gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, gDialogTextAlpha);
     print_generic_string(x + 10, y - 2, textContinue);
     print_generic_string(x + 10, y - SwapOffset, textSwitchVersion);
 	
@@ -2584,7 +2584,7 @@ void render_pause_castle_main_strings(s16 x, s16 y) {
 	//Draw some title text for version name
 	u8 sm74EE[] = { TEXT_SM74EE };
 	u8 sm74[] = { TEXT_SM74 };
-	if (gCurrentArea->index==1){
+	if (gCurrAreaIndex==1){
 		print_generic_string(x+90, y , sm74);
 	} else{
 		print_generic_string(x+75, y , sm74EE);

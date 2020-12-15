@@ -229,6 +229,7 @@ void load_area(s32 index) {
     if (gCurrentArea == NULL && gAreaData[index].unk04 != NULL) {
         gCurrentArea = &gAreaData[index];
         gCurrAreaIndex = gCurrentArea->index;
+		gMarioState->numStars = save_file_get_total_star_count(gCurrSaveFileNum-1,COURSE_MIN-1,COURSE_MAX-1);
 
         if (gCurrentArea->terrainData != NULL) {
             load_area_terrain(index, gCurrentArea->terrainData, gCurrentArea->surfaceRooms,

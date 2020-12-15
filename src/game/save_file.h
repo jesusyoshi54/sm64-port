@@ -86,6 +86,7 @@ struct MainMenuSaveData
 struct SaveBuffer
 {
     // Each of the four save files has two copies. If one is bad, the other is used as a backup.
+	//This is being repurposed to be one for sm74, the other for sm74EE
     struct SaveFile files[NUM_SAVE_FILES][2];
     // The main menu data has two copies. If one is bad, the other is used as a backup.
     struct MainMenuSaveData menuData[2];

@@ -74,9 +74,9 @@ struct RenderModeContainer {
 /* Rendermode settings for cycle 1 for all 8 layers. */
 struct RenderModeContainer renderModeTable_1Cycle[2] = { { {
     G_RM_OPA_SURF,
-    G_RM_AA_OPA_SURF,
-    G_RM_AA_OPA_SURF,
-    G_RM_AA_OPA_SURF,
+    G_RM_OPA_SURF,
+    G_RM_OPA_SURF,
+    G_RM_OPA_SURF,
     G_RM_AA_TEX_EDGE,
     G_RM_AA_XLU_SURF,
     G_RM_AA_XLU_SURF,
@@ -85,9 +85,9 @@ struct RenderModeContainer renderModeTable_1Cycle[2] = { { {
     { {
     /* z-buffered */
     G_RM_ZB_OPA_SURF,
-    G_RM_AA_ZB_OPA_SURF,
-    G_RM_AA_ZB_OPA_DECAL,
-    G_RM_AA_ZB_OPA_INTER,
+    G_RM_ZB_OPA_SURF,
+    G_RM_ZB_OPA_DECAL,
+    G_RM_RA_ZB_OPA_INTER,
     G_RM_AA_ZB_TEX_EDGE,
     G_RM_AA_ZB_XLU_SURF,
     G_RM_AA_ZB_XLU_DECAL,

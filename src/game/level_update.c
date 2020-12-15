@@ -830,7 +830,7 @@ void initiate_delayed_warp(void) {
         } else {
             switch (sDelayedWarpOp) {
                 case WARP_OP_GAME_OVER:
-                    save_file_reload();
+                    // save_file_reload();
                     warp_special(-3);
                     break;
 
@@ -1019,7 +1019,8 @@ s32 play_mode_paused(void) {
             initiate_warp(LEVEL_CASTLE_COURTYARD, gCurrentArea->index, 0x40, 0);
             fade_into_special_warp(0, 0);
             gSavedCourseNum = COURSE_NONE;
-        } else if (gPauseScreenMode == 3){
+        }else if (gPauseScreenMode == 3){
+			//SWITCH VERSION
             initiate_warp(gCurrLevelNum, gCurrentArea->index ^ 3, 10, 0);
             fade_into_special_warp(0, 0);
             gSavedCourseNum = COURSE_NONE;
