@@ -92,6 +92,8 @@
 
 // Ingame Menu
 #define TEXT_PAUSE _("PAUSE") // Pause text, Castle Courses
+#define TEXT_SM74 _("SM74") // Pause text, Castle Courses
+#define TEXT_SM74EE _("SM74 EXTREME EDITION") // Pause text, Castle Courses
 #define TEXT_HUD_CONGRATULATIONS _("CONGRATULATIONS") // Course Complete Text, Bowser Courses
 
 #if defined(VERSION_JP) || defined(VERSION_SH)
