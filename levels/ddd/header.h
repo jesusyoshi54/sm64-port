@@ -5,6 +5,7 @@
 extern const GeoLayout Geo_ddd_1_0x19001700[];
 extern const Gfx DL_ddd_1_0xe027ee0[];
 extern const Collision col_ddd_1_0xe0315b0[];
+extern struct MovtexQuadCollection ddd_1_Movtex_0[];
 extern const GeoLayout Geo_ddd_2_0x19001700[];
 extern const Gfx DL_ddd_2_0xe02e600[];
 extern const Collision col_ddd_2_0xe03b2a8[];

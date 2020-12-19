@@ -33,6 +33,8 @@
 #include "levels/thi/areas/1/trajectory.inc.c"
 #include "levels/thi/areas/1/movtext.inc.c"
 #include "levels/thi/areas/2/movtext.inc.c"
+#include "levels/thi/areas/1/movtextNew.inc.c"
 #include "levels/thi/areas/1/model.inc.c"
+#include "levels/thi/areas/2/movtextNew.inc.c"
 #include "levels/thi/areas/2/model.inc.c"
 #include "levels/thi/textureNew.inc.c"

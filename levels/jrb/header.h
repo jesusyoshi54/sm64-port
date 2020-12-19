@@ -5,6 +5,7 @@
 extern const GeoLayout Geo_jrb_1_0x19001700[];
 extern const Gfx DL_jrb_1_0xe01d2f0[];
 extern const Collision col_jrb_1_0xe022c08[];
+extern struct MovtexQuadCollection jrb_1_Movtex_0[];
 extern const GeoLayout Geo_jrb_2_0x19001700[];
 extern const Gfx DL_jrb_2_0xe021b80[];
 extern const Collision col_jrb_2_0xe0299d8[];

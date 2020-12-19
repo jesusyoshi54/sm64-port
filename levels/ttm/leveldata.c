@@ -69,6 +69,8 @@
 #include "levels/ttm/areas/2/macro.inc.c"
 #include "levels/ttm/areas/3/macro.inc.c"
 #include "levels/ttm/areas/4/macro.inc.c"
+#include "levels/ttm/areas/1/movtextNew.inc.c"
 #include "levels/ttm/areas/1/model.inc.c"
+#include "levels/ttm/areas/2/movtextNew.inc.c"
 #include "levels/ttm/areas/2/model.inc.c"
 #include "levels/ttm/textureNew.inc.c"

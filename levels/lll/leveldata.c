@@ -67,6 +67,8 @@
 #include "levels/lll/volcano_falling_trap/collision.inc.c"
 #include "levels/lll/areas/2/trajectory.inc.c"
 #include "levels/lll/areas/2/movtext.inc.c"
+#include "levels/lll/areas/1/movtextNew.inc.c"
 #include "levels/lll/areas/1/model.inc.c"
+#include "levels/lll/areas/2/movtextNew.inc.c"
 #include "levels/lll/areas/2/model.inc.c"
 #include "levels/lll/textureNew.inc.c"

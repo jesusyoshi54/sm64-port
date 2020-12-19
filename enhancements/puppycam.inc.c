@@ -36,7 +36,7 @@ NC_MODE_NOTURN: Disables horizontal and vertical control of the camera. Perfect 
 //#define EXT_BOUNDS
 
 #ifdef EXT_BOUNDS
-    #define MULTI 4.0f
+    #define MULTI 2.0f
 #endif // EXT_BOUNDS
 
 
@@ -389,6 +389,32 @@ static void newcam_rotate_button(void)
                 newcam_yaw_target = newcam_yaw_target-(ivrt(newcam_invertX)*0x4000);
             newcam_centering = 1;
         }
+
+		//UP/Down
+        if ((gPlayer1Controller->buttonPressed & U_CBUTTONS) && newcam_analogue == 0)
+        {
+            #ifndef nosound
+            play_sound(SOUND_MENU_CAMERA_ZOOM_IN, gDefaultSoundArgs);
+            #endif
+            if (newcam_modeflags & NC_FLAG_8D)
+                newcam_tilt = newcam_tilt+(ivrt(newcam_invertY)*0x800);
+            else
+                newcam_tilt = newcam_tilt+(ivrt(newcam_invertY)*0x1000);
+            newcam_centering = 1;
+        }
+        else
+        if ((gPlayer1Controller->buttonPressed & D_CBUTTONS) && newcam_analogue == 0)
+        {
+            #ifndef nosound
+            play_sound(SOUND_MENU_CAMERA_ZOOM_IN, gDefaultSoundArgs);
+            #endif
+            if (newcam_modeflags & NC_FLAG_8D)
+                newcam_tilt = newcam_tilt-(ivrt(newcam_invertY)*0x800);
+            else
+                newcam_tilt = newcam_tilt-(ivrt(newcam_invertY)*0x1000);
+            newcam_centering = 1;
+        }
+		
     }
     else //Standard camera movement
     if (newcam_modeflags & NC_FLAG_XTURN)
@@ -546,6 +572,8 @@ static void newcam_zoom_button(void)
 	if (gPlayer1Controller->buttonPressed & L_TRIG){
 		if (newcam_mode == NC_MODE_NORMAL){
 			newcam_mode = NC_MODE_8D;
+			newcam_tilt_acc = 0;
+			newcam_yaw_acc = 0;
 		}
 		else{
 			newcam_mode = NC_MODE_NORMAL;
@@ -569,7 +597,7 @@ static void newcam_update_values(void)
 
     if (newcam_modeflags & NC_FLAG_XTURN)
         newcam_yaw -= ((newcam_yaw_acc*(newcam_sensitivityX/10))*ivrt(newcam_invertX));
-    if (((newcam_tilt <= 12000) && (newcam_tilt >= -12000)) && newcam_modeflags & NC_FLAG_YTURN)
+    if (((newcam_tilt <= 12000) && (newcam_tilt >= -12000)) && newcam_modeflags & NC_FLAG_YTURN && !(newcam_modeflags & NC_FLAG_8D) && !(newcam_modeflags & NC_FLAG_4D))
         newcam_tilt += ((newcam_tilt_acc*ivrt(newcam_invertY))*(newcam_sensitivityY/10));
 
     if (newcam_tilt > 12000)

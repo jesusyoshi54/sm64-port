@@ -32,6 +32,8 @@
 #include "levels/sl/areas/2/collision.inc.c"
 #include "levels/sl/areas/2/macro.inc.c"
 #include "levels/sl/areas/1/movtext.inc.c"
+#include "levels/sl/areas/1/movtextNew.inc.c"
 #include "levels/sl/areas/1/model.inc.c"
+#include "levels/sl/areas/2/movtextNew.inc.c"
 #include "levels/sl/areas/2/model.inc.c"
 #include "levels/sl/textureNew.inc.c"

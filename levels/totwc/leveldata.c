@@ -18,7 +18,9 @@
 #include "levels/totwc/areas/1/collision.inc.c"
 #include "levels/totwc/areas/1/macro.inc.c"
 #include "levels/totwc/cloud/collision.inc.c" // Blank File
+#include "levels/totwc/areas/1/movtextNew.inc.c"
 #include "levels/totwc/areas/1/model.inc.c"
+#include "levels/totwc/areas/2/movtextNew.inc.c"
 #include "levels/totwc/areas/2/model.inc.c"
 #include "levels/totwc/areas/2/collision.inc.c"
 #include "levels/totwc/textureNew.inc.c"

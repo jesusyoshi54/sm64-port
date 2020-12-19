@@ -10,6 +10,7 @@ extern const GeoLayout Geo_bbh_2_0x19001700[];
 extern const Gfx DL_bbh_2_0xe026440[];
 extern const Gfx DL_bbh_2_0xe0397a0[];
 extern const Collision col_bbh_2_0xe02ffb8[];
+extern struct MovtexQuadCollection bbh_2_Movtex_0[];
 extern const LevelScript local_area_bbh_1_[];
 extern const LevelScript local_objects_bbh_1_[];
 extern const LevelScript local_warps_bbh_1_[];

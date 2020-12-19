@@ -43,6 +43,8 @@
 #include "levels/ssl/pyramid_elevator/collision.inc.c"
 #include "levels/ssl/eyerok_col/collision.inc.c"
 #include "levels/ssl/areas/2/movtext.inc.c"
+#include "levels/ssl/areas/1/movtextNew.inc.c"
 #include "levels/ssl/areas/1/model.inc.c"
+#include "levels/ssl/areas/2/movtextNew.inc.c"
 #include "levels/ssl/areas/2/model.inc.c"
 #include "levels/ssl/textureNew.inc.c"

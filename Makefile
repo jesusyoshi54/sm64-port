@@ -253,7 +253,6 @@ else
 endif
 endif
 
-  # Use a default opt flag for gcc
   ifeq ($(COMPILER),gcc)
     OPT_FLAGS := -O2
   endif

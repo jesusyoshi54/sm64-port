@@ -8,6 +8,7 @@ extern const Collision col_wmotr_1_0xe028ae8[];
 extern const GeoLayout Geo_wmotr_2_0x19001700[];
 extern const Gfx DL_wmotr_2_0xe01e6c0[];
 extern const Collision col_wmotr_2_0xe024698[];
+extern struct MovtexQuadCollection wmotr_2_Movtex_0[];
 extern const LevelScript local_area_wmotr_1_[];
 extern const LevelScript local_objects_wmotr_1_[];
 extern const LevelScript local_warps_wmotr_1_[];

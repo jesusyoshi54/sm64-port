@@ -5,6 +5,7 @@
 extern const GeoLayout Geo_castle_courtyard_1_0x19001700[];
 extern const Gfx DL_castle_courtyard_1_0xe023450[];
 extern const Collision col_castle_courtyard_1_0xe029798[];
+extern struct MovtexQuadCollection castle_courtyard_1_Movtex_0[];
 extern const GeoLayout Geo_castle_courtyard_2_0x19001700[];
 extern const Gfx DL_castle_courtyard_2_0xe029560[];
 extern const Collision col_castle_courtyard_2_0xe030f80[];

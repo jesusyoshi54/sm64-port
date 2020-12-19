@@ -5,6 +5,7 @@
 extern const GeoLayout Geo_ccm_1_0x19001700[];
 extern const Gfx DL_ccm_1_0xe020330[];
 extern const Collision col_ccm_1_0xe027a58[];
+extern struct MovtexQuadCollection ccm_1_Movtex_0[];
 extern const GeoLayout Geo_ccm_2_0x19001700[];
 extern const Gfx DL_ccm_2_0xe026ad0[];
 extern const Collision col_ccm_2_0xe02f0f0[];

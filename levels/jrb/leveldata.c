@@ -40,6 +40,8 @@
 #include "levels/jrb/areas/2/collision.inc.c"
 #include "levels/jrb/areas/2/macro.inc.c"
 #include "levels/jrb/areas/2/movtext.inc.c"
+#include "levels/jrb/areas/1/movtextNew.inc.c"
 #include "levels/jrb/areas/1/model.inc.c"
+#include "levels/jrb/areas/2/movtextNew.inc.c"
 #include "levels/jrb/areas/2/model.inc.c"
 #include "levels/jrb/textureNew.inc.c"

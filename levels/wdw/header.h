@@ -5,6 +5,7 @@
 extern const GeoLayout Geo_wdw_1_0x19001700[];
 extern const Gfx DL_wdw_1_0xe025350[];
 extern const Collision col_wdw_1_0xe02d2b0[];
+extern struct MovtexQuadCollection wdw_1_Movtex_0[];
 extern const GeoLayout Geo_wdw_2_0x19001700[];
 extern const Gfx DL_wdw_2_0xe030ed0[];
 extern const Collision col_wdw_2_0xe03bb20[];

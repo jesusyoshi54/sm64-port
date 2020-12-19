@@ -590,9 +590,12 @@ void *get_quad_collection_from_id(u32 id) {
         case TTM_MOVTEX_PUDDLE:
             return ttm_movtex_puddle;
         default:
-            return NULL;
+            return GetRomhackWaterBox(id);
     }
 }
+
+
+
 
 /**
  * Write to 'gfx' a command to set the current texture format for the given

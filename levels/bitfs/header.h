@@ -5,6 +5,7 @@
 extern const GeoLayout Geo_bitfs_1_0x19001700[];
 extern const Gfx DL_bitfs_1_0xe017f10[];
 extern const Collision col_bitfs_1_0xe01c590[];
+extern struct MovtexQuadCollection bitfs_1_Movtex_0[];
 extern const GeoLayout Geo_bitfs_2_0x19001700[];
 extern const Gfx DL_bitfs_2_0xe04c990[];
 extern const Collision col_bitfs_2_0xe05df38[];
